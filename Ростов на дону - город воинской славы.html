@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ростов-на-Дону - Город Воинской Славы</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <style>
+        .hero-pattern {
+            background-image: url('https://img.tsargrad.tv/cache/1/a/1_9PqWhx624Wc.jpg/w1056h594fill.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .quiz-option {
+            transition: all 0.3s ease;
+        }
+        .quiz-option:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .history-card {
+            transition: transform 0.3s ease;
+        }
+        .history-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50"> 
+    <!-- Navigation -->
+    <nav class="bg-red-800 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold">Ростов-на-Дону</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#history" class="hover:text-red-200">История</a>
+                    <a href="#heroes" class="hover:text-red-200">Герои</a>
+                    <a href="#memorials" class="hover:text-red-200">Памятники</a>
+                    <a href="#quiz" class="hover:text-red-200">Викторина</a>
+                </div>
+<button class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern text-white py-20 relative">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Ростов-на-Дону</h1>
+            <h2 class="text-3xl md:text-5xl font-semibold mb-8">Город Воинской Славы</h2>
+            <p class="text-xl md:text-2xl max-w-4xl mx-auto mb-10">
+                Город, прошедший через огонь Великой Отечественной войны и сохранивший свою героическую историю
+            </p>
+            <a href="#history" class="bg-red-700 hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                Узнать историю
+            </a>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">История воинской славы</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="history-card bg-gray-100 p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-red-700 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="shield" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">1941 год</h3>
+                    <p class="text-gray-700">Первая оккупация города немецкими войсками и его освобождение</p>
+                </div>
+                <div class="history-card bg-gray-100 p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-red-700 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="award" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">1942 год</h3>
+                    <p class="text-gray-700">Вторая оккупация и героическая оборона города</p>
+                </div>
+                <div class="history-card bg-gray-100 p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-red-700 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="star" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">1943 год</h3>
+                    <p class="text-gray-700">Окончательное освобождение Ростова-на-Дону</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heroes Section -->
+    <section id="heroes" class="py-20 bg-red-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Герои города</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto bg-gray-300 rounded-full mb-4 bg-cover bg-center" style="background-image: url('https://yastatic.net/naydex/yandex-search/13jxRw635/e2698eSMW7h/1gyjlJhb5IySoDndWUoAWZ2Uo1VWCZaliBBeKsks2kkm3nJO560OzDUqROEpnCcgrqjji1clwXwYZVC-lXYosAPdKlBcSSgZEHxwVVKDjtRCnWvaDk4XoxpQW7xP7JPJA')"></div>
+                    <h3 class="text-xl font-semibold mb-2">Семён Будённый</h3>
+                    <p class="text-gray-700">Советский военачальник. <br>Один из первых маршалов СССР</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto bg-gray-300 rounded-full mb-4 bg-cover bg-center" style="background-image: url('https://yastatic.net/naydex/yandex-search/12jxRw524/e2698eSMW7h/1gyjlJhb5IySoDndWUoAWZ2Uo1VWCZaliBBeKsks2kkm3nJO560OzbVrhGDpm2LgbKoiSpelQXuBe9p-l_YhcNBGbBhUwOgGWvn2V1FNQVwPFmQDwU0YL0')"></div>
+                    <h3 class="text-xl font-semibold mb-2">Николай Гастелло</h3>
+                    <p class="text-gray-700">Советский военный лётчик <br>совершивший «огненный таран»</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto bg-gray-300 rounded-full mb-4 bg-cover bg-center" style="background-image: url('https://avatars.mds.yandex.net/i?id=4ccc6ff78c48a273d549e59655cd8bde6a4d2e9c-15423261-images-thumbs&n=13')"></div>
+                    <h3 class="text-xl font-semibold mb-2">Виктя Черевичкин</h3>
+                    <p class="text-gray-700">Советский подросток <br>убитый нацистскими оккупантами</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto bg-gray-300 rounded-full mb-4 bg-cover bg-center" style="background-image: url('https://avatars.mds.yandex.net/i?id=4c4682779759269e5c22686ef7d678ab98c0e793-4076134-images-thumbs&n=13')"></div>
+                    <h3 class="text-xl font-semibold mb-2">Цезарь Куников</h3>
+                    <p class="text-gray-700">Советский командир десантного отряда,<br>захватившего плацдарм «Малая земля»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Memorials Section -->
+    <section id="memorials" class="py-20 bg-red-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Памятники Воинской Славы</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://s5.stc.all.kpcdn.net/russia/wp-content/uploads/2020/02/shturm1330-530x322.jpg" alt="Памятник" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">"Штурм"</h3>
+                        <p class="text-gray-700">Памятник освободителям Ростова в 1943 году</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://s0.rbk.ru/v6_top_pics/media/img/2/82/347110150659822.webp" alt="Памятник" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">"Стелла Воинской Славы"</h3>
+                        <p class="text-gray-700">В честь присвоения городу звания "Город Воинской Славы"</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://avatars.mds.yandex.net/i?id=147c0ba837daa0978d56cfccdeff8bdadec5f976-7045468-images-thumbs&n=13" alt="Памятник" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">"Вечный огонь"</h3>
+                        <p class="text-gray-700">Мемориал павшим воинам в Великой Отечественной войне</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Panorama Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Панорамы памятников</h2>
+                
+                <!-- Подключение Pannellum -->
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+                <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+                
+                <!-- Панель выбора панорамы -->
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button onclick="loadPanorama('panorama1')" class="bg-red-700 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        Вечный огонь 
+                    </button>
+                    <button onclick="loadPanorama('panorama2')" class="bg-red-700 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        Тачанка
+                    </button>
+                    <button onclick="loadPanorama('panorama3')" class="bg-red-700 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        Стела «Освободителям Ростова»
+                    </button>
+                </div>
+                
+                <!-- Стили для панорамы -->
+                <style>
+                    #panorama-container {
+                        width: 100%;
+                        max-width: 800px;
+                        height: 500px;
+                        border-radius: 12px;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                        margin: 0 auto;
+                        overflow: hidden;
+                    }
+                    
+                    #panorama {
+                        width: 100%;
+                        height: 100%;
+                    }
+                </style>
+                
+                <!-- Контейнер для панорамы -->
+                <div id="panorama-container">
+                    <div id="panorama"></div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Скрипт для управления панорамами -->
+        <script>
+            // Конфигурации для каждой панорамы
+            const panoramaConfigs = {
+                panorama1: {
+                    "autoLoad": true,
+                    "type": "equirectangular",
+                    "panorama": "https://cloudflare1.360gigapixels.com/pano/suhonosov_evgeniy_61view-ru/00125483_all-rmat-jpg/equirect_crop_3_1/6.jpg",
+                    
+                    "hotSpotDebug": false, // Можно включить true для отладки
+                    "hotSpots": [
+                        {
+                            "pitch": -27,
+                            "yaw": 0,
+                            "type": "info",
+                            "text": "Вечный огонь на площади имени Карла Маркса"
+                        }
+                    ]
+                },
+                panorama2: {
+                    "autoLoad": true,
+                    "type": "equirectangular",
+                    "panorama": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82_%C2%AB%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D0%BD%D0%B0_%D1%82%D0%B0%D1%87%D0%B0%D0%BD%D0%BA%D0%B0%C2%BB_%28%D0%9A%D0%B0%D1%85%D0%BE%D0%B2%D0%BA%D0%B0%29_13.jpg/1599px-%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82_%C2%AB%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D0%BD%D0%B0_%D1%82%D0%B0%D1%87%D0%B0%D0%BD%D0%BA%D0%B0%C2%BB_%28%D0%9A%D0%B0%D1%85%D0%BE%D0%B2%D0%BA%D0%B0%29_13.jpg",
+                    "hotSpotDebug": false,
+                    "hotSpots": [
+                        {
+                            "pitch": 3.05,
+                            "yaw": 4.6,
+                            "type": "info",
+                            "text": "«Тачанка-ростовчанка» — монумент, посвящённый Первой Конной Армии в годы Гражданской войны"
+                        }
+                    ]
+                },
+                panorama3: {
+                    "autoLoad": true,
+                    "type": "equirectangular",
+                    "panorama": "https://disk.yandex.ru/i/3cIF15c8PJ-jeQ",
+                    "hotSpotDebug": false,
+                    "hotSpots": [
+                        {
+                            "pitch": -0.20,
+                            "yaw": 2,
+                            "type": "info",
+                            "text": "Стела «Освободителям Ростова» — памятник, возведённый на Театральной площади Ростова-на-Дону в честь освобождения города от нацистских войск"
+                        }
+                    ]
+                }
+            };
+    
+            let viewer; // Глобальная переменная для хранения экземпляра панорамы
+    
+            // Функция для загрузки панорамы
+            function loadPanorama(panoramaKey) {
+                // Если панорама уже была инициализирована, уничтожаем её
+                if (viewer) {
+                    viewer.destroy();
+                }
+                
+                // Создаём новую панораму с выбранной конфигурацией
+                viewer = pannellum.viewer('panorama', panoramaConfigs[panoramaKey]);
+            }
+    
+            // Автоматически загружаем первую панораму при загрузке страницы
+            document.addEventListener('DOMContentLoaded', function() {
+                loadPanorama('panorama1');
+            });
+        </script>
+
+
+    <!-- Quiz Section -->
+<section id="quiz" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Викторина</h2>
+            <div class="max-w-4xl mx-auto bg-gray-100 rounded-lg p-8 shadow-lg">
+                <div id="quiz-container">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Проверьте свои знания о военной истории Ростова-на-Дону</h3>
+                    <div class="grid gap-4">
+                        <button onclick="startQuiz()" class="bg-red-700 hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors mx-auto">
+                            Начать викторину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Ростов-на-Дону</h3>
+                    <p>Город Воинской Славы</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Навигация</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#history" class="hover:text-red-300">История</a></li>
+                        <li><a href="#heroes" class="hover:text-red-300">Герои</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Достопримечательности</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#memorials" class="hover:text-red-300">Памятники</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Активности</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#quiz" class="hover:text-red-300">Викторина</a></li>
+                    </ul>
+                </div>
+</div>
+            
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Vanta.js waves background
+        VANTA.WAVES({
+            el: ".hero-pattern",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xb22222,
+            shininess: 35.00,
+            waveHeight: 15.00,
+            waveSpeed: 0.75,
+            zoom: 0.85
+        });
+
+        // Quiz functionality
+        const quizQuestions = [
+            {
+                question: "В каком году Ростов-на-Дону был впервые оккупирован немецкими войсками?",
+                options: ["1941", "1942", "1943", "1944"],
+                correct: 0
+            },
+            {
+                question: "Сколько раз город был оккупирован во время Великой Отечественной войны?",
+                options: ["1 раз", "2 раза", "3 раза", "4 раза"],
+                correct: 1
+            },
+            {
+                question: "Когда Ростов-на-Дону получил звание 'Город Воинской Славы'?",
+                options: ["2005", "2008", "2010", "2012"],
+                correct: 1
+            },
+            {
+                question: "Какая река протекает через Ростов-на-Дону?",
+                options: ["Волга", "Дон", "Днепр", "Кубань"],
+                correct: 1
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function startQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const quizContainer = document.getElementById('quiz-container');
+            const question = quizQuestions[currentQuestion];
+            
+            quizContainer.innerHTML = `
+                <h3 class="text-2xl font-semibold mb-6">${question.question}</h3>
+                <div class="grid gap-4">
+                    ${question.options.map((option, index) => `
+                        <button onclick="checkAnswer(${index})" class="quiz-option bg-white hover:bg-red-100 border border-gray-300 rounded-lg p-4 text-left transition-all">
+                            ${option}
+                        </button>
+                    `).join('')}
+                </div>
+                <div class="mt-6 text-center">
+                    <p>Вопрос ${currentQuestion + 1} из ${quizQuestions.length}</p>
+                </div>
+            `;
+        }
+
+        function checkAnswer(selectedIndex) {
+            const correctIndex = quizQuestions[currentQuestion].correct;
+            
+            if (selectedIndex === correctIndex) {
+                score++;
+            }
+            
+            currentQuestion++;
+            
+            if (currentQuestion < quizQuestions.length) {
+                showQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            const quizContainer = document.getElementById('quiz-container');
+            quizContainer.innerHTML = `
+                <h3 class="text-2xl font-semibold mb-6 text-center">Результаты викторины</h3>
+                <div class="text-center mb-6">
+                    <p class="text-xl">Вы ответили правильно на ${score} из ${quizQuestions.length} вопросов</p>
+                    <p class="text-lg mt-4">${getResultMessage(score)}</p>
+                </div>
+                <div class="text-center">
+                    <button onclick="startQuiz()" class="bg-red-700 hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                        Попробовать снова
+                    </button>
+                </div>
+            `;
+        }
+
+        function getResultMessage(score) {
+            if (score === quizQuestions.length) {
+                return "Отлично! Вы настоящий знаток истории Ростова-на-Дону!";
+            } else if (score >= quizQuestions.length / 2) {
+                return "Хороший результат! Вы хорошо знаете историю города.";
+            } else {
+                return "Попробуйте еще раз и узнайте больше о героической истории Ростова-на-Дону!";
+            }
+        }
+    </script>
+</body>
+</html>
